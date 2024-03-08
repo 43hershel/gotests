@@ -3,10 +3,12 @@ package main
 const (
 	Spanish = "Spanish"
 	French  = "French"
+	Basque  = "Basque"
 
 	englishHelloPrefix = "Hello "
 	spanishHelloPrefix = "Hola, "
 	frenchHelloPrefix  = "Bonjour, "
+	basqueHelloPrefix  = "Kaixo, "
 )
 
 func Hello(name string, language string) string {
@@ -22,6 +24,8 @@ func greetingPrefix(language string) (prefix string) {
 		prefix = frenchHelloPrefix
 	case "Spanish":
 		prefix = spanishHelloPrefix
+	case "Basque":
+		prefix = basqueHelloPrefix
 	default:
 		prefix = englishHelloPrefix
 	}
